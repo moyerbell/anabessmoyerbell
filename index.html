@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ana Bess Moyer Bell</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..800,0..100,0..1;1,9..144,200..800,0..100,0..1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFDF2; --ink:#1F1F1F; --mute:#2B2B2B; --accent:#1F1F1F; --hi:#FFF0A0; --name:#E3B82E;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root[data-theme="dark"]{--paper:#1A1A18;--ink:#F4F1E2;--mute:#DAD6C4;--accent:#F4F1E2;--hi:#4F4208;--name:#F2CF5C;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Fraunces",Georgia,"Times New Roman",serif;
+  font-optical-sizing:auto;font-style:normal;
+  font-variation-settings:"WONK" 0;
+  font-size:14px;font-weight:300;line-height:1.7;
+  padding:0 clamp(1.25rem,5vw,4rem);
+}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{background:var(--hi);color:var(--ink)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+main{max-width:70rem;margin:0 auto}
+
+.hero{padding:clamp(3rem,12vh,8rem) 0 clamp(3rem,9vh,6rem)}
+h1{
+  margin:0;font-weight:500;line-height:1;letter-spacing:-.02em;color:var(--name);
+  font-size:min(64px,13.5vw);
+  font-variation-settings:"WONK" 1;
+}
+em{font-style:normal}
+h1 span{display:block}
+h1 .l2{padding-left:clamp(.5rem,8vw,6rem)}
+.lede{
+  max-width:32rem;margin:3rem 0 0 clamp(0rem,13vw,10rem);
+  font-size:18px;font-weight:300;line-height:1.5;font-variation-settings:"WONK" 0;
+}
+.go{margin:2.5rem 0 0 clamp(0rem,13vw,10rem);max-width:32rem;color:var(--mute)}
+
+section{padding:clamp(3rem,8vh,5.5rem) 0;border-top:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+h2{
+  margin:0 0 2rem;font-weight:500;font-style:normal;font-size:24px;color:var(--name);
+  line-height:1.2;font-variation-settings:"WONK" 1;
+}
+.cols{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}
+@media (min-width:52rem){.cols{grid-template-columns:minmax(9rem,1fr) minmax(0,3fr);gap:3rem}}
+.cols h2{margin:0}
+.body{max-width:40rem}
+.body p{margin:0 0 1.25em}
+.note{color:var(--mute)}
+
+section.cols[hidden]{display:none}
+.tabs{display:flex;flex-wrap:wrap;gap:.25rem 1.75rem}
+.tabs button{
+  font:inherit;font-size:18px;font-weight:300;font-variation-settings:"WONK" 0;
+  background:none;border:0;border-bottom:2px solid transparent;border-radius:0;
+  padding:.35rem 0;color:var(--mute);cursor:pointer;
+}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{color:var(--ink);font-weight:500;border-bottom-color:var(--accent)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.work h3{margin:0 0 .35rem;font-weight:300;font-size:18px;line-height:1.3;font-variation-settings:"WONK" 0}
+.video{position:relative;width:100%;max-width:560px;aspect-ratio:16/9;margin:1rem 0 .75rem}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.work article{margin:0 0 3rem}
+.work article:last-child{margin-bottom:0}
+.work p{margin:0 0 1em}
+.where{color:var(--mute);margin-bottom:.7rem}
+
+.list{list-style:none;margin:0;padding:0;max-width:none}
+.list li{display:grid;grid-template-columns:4.5rem minmax(0,1fr);gap:1rem;padding:.9rem 0}
+.list li+li{border-top:1px dotted color-mix(in srgb,var(--ink) 30%,transparent)}
+.list time{color:var(--mute);font-variant-numeric:oldstyle-nums}
+.list em{color:var(--mute)}
+.list+.list{margin-top:2rem}
+
+.mail{font-size:24px;font-weight:500;line-height:1.2;font-variation-settings:"WONK" 1;word-break:break-word}
+footer{max-width:70rem;margin:0 auto;padding:2rem 0 3rem;color:var(--mute)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <h1 id="name" aria-label="Ana Bess Moyer Bell"><span class="l1">Ana Bess</span><span class="l2">Moyer Bell</span></h1>
+    <p class="lede">Drama therapist, playwright and drug policy advisor. Ana Bess wants to see the end of the war on drugs, and she works toward a world with more room for belonging through harm reduction, recovery, plays, films and policy.</p>
+    <div class="go tabs" role="tablist" aria-label="Sections">
+      <button type="button" role="tab" id="tab-about" aria-controls="about">About</button>
+      <button type="button" role="tab" id="tab-work" aria-controls="work">Work</button>
+      <button type="button" role="tab" id="tab-film" aria-controls="film">Film</button>
+      <button type="button" role="tab" id="tab-writing" aria-controls="writing">Writing</button>
+      <button type="button" role="tab" id="tab-honors" aria-controls="honors">Honors</button>
+      <button type="button" role="tab" id="tab-contact" aria-controls="contact">Contact</button>
+    </div>
+  </header>
+
+  <section id="work" class="cols" role="tabpanel" aria-labelledby="tab-work">
+    <h2>Work</h2>
+    <div class="body work">
+      <article>
+        <h3>Creative Pathways at the Genesis Center</h3>
+        <div class="where">Co-creator, with the Rhode Island Department of Human Services, 2024 to present [confirm her role and organization]</div>
+        <p>In 2024, a colleague at the Rhode Island Department of Human Services asked Ana Bess to help build a program for newly arrived Rhode Islanders living below the poverty line. Having worked with immigrants and refugees at home and abroad, she said yes. Two years on, it brings together English language learning, creative writing, visual arts and drama therapy.</p>
+        <p>The program’s showcase this year, “Recipes for Belonging,” celebrates the creativity and stories of some of Rhode Island’s newest neighbors. It’s a beautifully universal theme, and a reminder of how much we have in common. [Add date, time and place.]</p>
+      </article>
+      <article>
+        <h3>2nd Act</h3>
+        <div class="where">Executive Director, 2021 to [confirm end date; she was the outgoing director in May 2024]</div>
+        <p>Ana Bess brought two nonprofits, Improbable Players and COAAST, together as one, then rebuilt its operations, brand and programming around evidence, equity and a trauma-informed, recovery-friendly workplace. Grant funding and the donor base grew, public health campaigns created new revenue, and the organization won state funding.</p>
+        <p>She founded COAAST in 2016. It used drama therapy and applied theater to prevent overdose with students, health professionals and people in recovery, in partnership with the Rhode Island Department of Health and NYU’s Theatre and Health Lab.</p>
+      </article>
+      <article>
+        <h3>Office of the Governor, Rhode Island</h3>
+        <div class="where">Senior Advisor on substance use treatment, recovery and harm reduction, 2021 to [confirm]</div>
+        <p>Ana Bess helped pass the nation’s first Overdose Prevention Site pilot bill, sits on the committee that wrote the medical regulations for the harm reduction centers, and helped end a statewide naloxone shortage in 2021. She is now advocating for better wages and support for the peer recovery workforce.</p>
+      </article>
+      <article>
+        <h3>Plays and film</h3>
+        <div class="where">Playwright</div>
+        <p><em>Four Legs to Stand On</em> toured schools and campuses across New England, followed by talkbacks with the audience. <em>Resurfacing</em>, co-written with Annie Brewster and Jonathan Adler, was performed around Boston in 2018 and 2019. In 2018, Trinity Repertory Company commissioned her to workshop a new play about the drug war, PTSD, mass incarceration and recovery. In 2023, she took the pilot of a TV short series on the history of harm reduction to New York Stage and Film. She was also a commissioned artist with A Pageant for Providence.</p>
+      </article>
+      <article>
+        <h3>Clinical work</h3>
+        <div class="where">Drama therapist, 2014 onward</div>
+        <p>Ana Bess has worked with people in grief, trauma and addiction in homeless shelters, a veterans’ hospital, community health centers and San Quentin prison. She has run drama therapy groups with migrant and refugee teens in Rhode Island, and an art therapy camp for refugee teens in Eastern Ukraine.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="film" class="cols" role="tabpanel" aria-labelledby="tab-film">
+    <h2>Film</h2>
+    <div class="body work">
+      <article>
+        <h3>Carry On, Cleveland</h3>
+        <div class="where">2nd Act [add year and confirm her role]</div>
+        <p>A short film for a naloxone campaign in Cuyahoga County, Ohio, partly funded by the county’s ADAHMS Board.</p>
+        <div class="video"><iframe src="https://www.youtube.com/embed/sMnaaisJdAw?si=dtEFEN8u-b_BI4oL" title="Carry On, Cleveland" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <p><a href="https://www.youtube.com/watch?v=sMnaaisJdAw">Watch on YouTube</a></p>
+      </article>
+      <article>
+        <h3>Saving Our Lives</h3>
+        <div class="where">2nd Act, 2023</div>
+        <p>A public service announcement about naloxone. It follows one man through loss and disconnection, and shows how creativity gives him hope.</p>
+        <div class="video"><iframe src="https://www.youtube.com/embed/FhQ91yRtE7g?si=J36Vs2xizJHYDtlX" title="Saving Our Lives" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <p><a href="https://www.youtube.com/watch?v=FhQ91yRtE7g">Watch on YouTube</a></p>
+      </article>
+      <article>
+        <h3>For the Ones We Love</h3>
+        <div class="where">“Naloxone Is an Act of Love,” 2nd Act [add year]</div>
+        <p>A short narrative film about how naloxone can save a life and be an act of love between friends, made for 18 to 25 year olds and featuring 2nd Act’s actors in recovery. Ana Bess shaped the concept with Geoff Capraro of Brown Emergency Medicine and a team of student interns, and the film was produced with JaiCG Public Relations. The campaign was supported by the New England Addiction Technology Transfer Center at the Brown University School of Public Health.</p>
+        <div class="video"><iframe src="https://www.youtube.com/embed/54Qam_YW0P0?si=HVKSCQoO-sp6D6Io" title="For the Ones We Love" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <p><a href="https://www.youtube.com/watch?v=54Qam_YW0P0">Watch on YouTube</a></p>
+      </article>
+      <p class="note">[Add the year and her exact role on each film.]</p>
+    </div>
+  </section>
+
+  <section id="writing" class="cols" role="tabpanel" aria-labelledby="tab-writing">
+    <h2>Writing</h2>
+    <ul class="list body">
+      <li><time>2023</time><span>Therapeutic theatre reduces stigma, facilitates grieving, and desire to take social action to address the opioid epidemic <em>(working title, forthcoming)</em></span></li>
+      <li><time>2021</time><span>Recovery capital and collaborative theatre making: how actors in recovery from substance addiction value their participation in addiction prevention plays, <em>Research in Drama Education</em></span></li>
+      <li><time>2021</time><span>Participatory arts: a global focus on empowerment opportunities for vulnerable youth populations, <em>The Cambridge Handbook of Community Empowerment</em></span></li>
+    </ul>
+  </section>
+
+  <section id="honors" class="cols" role="tabpanel" aria-labelledby="tab-honors">
+    <h2>Honors</h2>
+    <div class="body">
+      <ul class="list">
+        <li><time>2024</time><span>William Hope Huntley Award, <em>2nd Act</em>, for her years of leadership and impact on the recovery community</span></li>
+        <li><time>2023</time><span>Artist in Residence, <em>New York Stage and Film</em></span></li>
+        <li><time>2019</time><span>Wild Woman of the Year, <em>Domestic Violence Resource Center, South Kingstown, RI</em></span></li>
+        <li><time>2018</time><span>Hall of Fame Humanitarian Award, <em>City of Pawtucket, RI</em></span></li>
+        <li><time>2018</time><span>Innovator-in-Residence, <em>Rocky Hill School</em></span></li>
+        <li><time>2018</time><span>New Play Workshop, <em>Trinity Repertory Company</em></span></li>
+        <li><time>2016</time><span>Best Oral Presentation, <em>NYU Research and Scholarship Showcase</em></span></li>
+      </ul>
+      <p class="note" style="margin-top:1.5rem">[Add anything since 2024.]</p>
+    </div>
+  </section>
+
+  <section id="about" class="cols" role="tabpanel" aria-labelledby="tab-about">
+    <h2>About</h2>
+    <div class="body">
+      <p>Ana Bess Moyer Bell is a drama therapist, playwright, researcher and cultural activist working at the intersection of storytelling, public health and advocacy. A Rhode Island native and former Providence resident, she specializes in translating stories and lived experience into creative interventions made with communities, rather than simply for them.</p>
+      <p>Her work in Providence spans immigrant communities, recovery and harm reduction, and the arts, with collaborations including RIDOH, EOHHS, BHDDH and the Rhode Island U.S. Attorney’s Office. She served on Governor McKee’s transition team, took part in Leadership Rhode Island, and was a commissioned artist with Trinity Repertory Company and A Pageant for Providence.</p>
+      <p>Her life’s mission is to ensure dignity and unconditional support for people who use drugs, and to help find alternatives to the war on drugs. She holds an M.A. in Drama Therapy from New York University (summa cum laude) and is a Registered Drama Therapist with the North American Drama Therapy Association.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="cols" role="tabpanel" aria-labelledby="tab-contact">
+    <h2>Contact</h2>
+    <div class="body">
+      <p class="mail"><a href="mailto:hello@example.com">[public email]</a></p>
+      <p>For speaking engagements, group facilitation, consulting, collaboration, press, or a good question.</p>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Ana Bess Moyer Bell</footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+  var panels=tabs.map(function(t){return document.getElementById(t.getAttribute('aria-controls'))});
+  function show(i,focus){
+    tabs.forEach(function(t,j){
+      var on=i===j;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      panels[j].hidden=!on;
+    });
+    if(focus)tabs[i].focus();
+    try{history.replaceState(null,'','#'+panels[i].id)}catch(e){}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){show(i)});
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=(i+1)%tabs.length;
+      else if(e.key==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;
+      else if(e.key==='Home')n=0;
+      else if(e.key==='End')n=tabs.length-1;
+      if(n!==null){e.preventDefault();show(n,true)}
+    });
+  });
+  var start=0;
+  try{var id=location.hash.slice(1);panels.forEach(function(p,j){if(p.id===id)start=j})}catch(e){}
+  show(start);
+})();
+</script>
+</body>
+</html>
